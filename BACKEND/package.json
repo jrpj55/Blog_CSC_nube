@@ -1,6 +1,9 @@
 {
   "name": "Blog-CSC",
   "version": "1.0.0",
+  "engines": {
+    "node": "20.x"
+  },
   "description": "Blog diseñado para la CSC",
   "main": "index.js",
   "author": "Raychu",
