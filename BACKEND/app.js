@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { API_VERSION } = require('./constantes');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 
@@ -21,6 +22,13 @@ app.use(express.static('cargaImagen'));
 
 //Configure Header HTTP - CORS, cuando hagamos peticiones http no las bloquee sino las deje pasar
 app.use(cors());
+
+//configurar para subir a heroku
+const _dirname = path.resolve();
+app.use(express.static(path.join(_dirname, '/frontend/build')));
+app.get('*', (req, res) =>
+  res.sendFile(path.join(_dirname, '/frontend/build/index.html'))
+);
 
 // Configure rutas
 app.use(`/api/${API_VERSION}`, rutaAutentica);

@@ -1,0 +1,21 @@
+{
+  "name": "blog_csc_nube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install --force && cd../frontend && npm install --force && npm run build",
+    "start": "node backend/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrpj55/Blog_CSC_nube.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrpj55/Blog_CSC_nube/issues"
+  },
+  "homepage": "https://github.com/jrpj55/Blog_CSC_nube#readme"
+}
