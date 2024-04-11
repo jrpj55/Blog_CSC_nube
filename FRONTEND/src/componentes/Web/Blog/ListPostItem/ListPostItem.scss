@@ -1,0 +1,26 @@
+@import '~/src/scss/index.scss';
+
+.list-post-item {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  .ui.image {
+    width: 200px;
+    height: 170px;
+    margin-right: 10px;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: black;
+    margin: 10px 0 0 0;
+    font-weight: normal;
+  }
+
+  span {
+    color: blue;
+    opacity: 0.9;
+    font-size: 12px;
+  }
+}

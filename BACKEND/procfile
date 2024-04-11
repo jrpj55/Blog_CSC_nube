@@ -1,0 +1,2 @@
+//cuando se suba esta aplicación al servifor heroku ejecute este comando
+web: node index.js

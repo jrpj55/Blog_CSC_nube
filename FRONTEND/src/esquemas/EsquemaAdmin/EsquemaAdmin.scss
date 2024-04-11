@@ -1,0 +1,43 @@
+@import '~/src/scss/index.scss';
+
+//ancho del menu en una variable
+$widthLeftMenu: 180px;
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: $background-grey;
+
+  //menu de la izquierda
+  &__left {
+    background-color: $background-dark;
+    width: $widthLeftMenu;
+
+    .logo {
+      height: 50px;
+      width: 90%;
+      margin: 20px 0;
+    }
+  }
+
+  &__right {
+    width: calc(100% - $widthLeftMenu);
+
+    //cabecera
+    &-header {
+      background-color: $background-dark;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 10px;
+    }
+
+    //Contenido
+    &-content {
+      position: relative;
+      margin: 20px;
+    }
+  }
+}

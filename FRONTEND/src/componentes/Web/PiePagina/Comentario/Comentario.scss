@@ -1,0 +1,17 @@
+@import '~/src/scss/index.scss';
+
+.footer-comentario {
+  width: 50%;
+  padding-left: 120px;
+
+  > h4 {
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .success {
+    color: blue;
+    text-align: center;
+    font-size: 12px;
+  }
+}
